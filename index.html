@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>BeautyMark</title>
+
+  <meta name="author" content="BeautyMark" />
+  <meta name="description" content="Keep track of your makeup, skincare, haircare, and nail products" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.png" />
+  <link rel="icon" type="image/png" href="./favicon.png">
+  
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#F3579B">
+
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="BeautyMark">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BeautyMark">
+
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" sizes="192x192" href="./icon.png">
+
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="./icon.png">
+  <meta name="msapplication-TileColor" content="#F3579B">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Default twitter cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BeautyMark">
+  <meta name="twitter:title" content="BeautyMark">
+  <meta name="twitter:description" content="Keep track of your makeup, skincare, haircare, and nail products">
+  
+  <meta property="og:title" content="BeautyMark">
+  <meta property="og:description" content="Keep track of your makeup, skincare, haircare, and nail products">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BeautyMark">
+  <meta property="og:image" content="icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M48EPTEQJE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M48EPTEQJE');
+  </script>
+
+  <style>
+    * {box-sizing: border-box}
+    [hidden] {display: none !important}
+    [disabled] {pointer-events:none; opacity: 0.3}
+    .horizontal {display: flex; flex-direction: row; align-items: flex-start;}
+    .vertical {display: flex; flex-direction: column}
+    .center {justify-content: center; align-items: center}
+    .flex {flex: 1}
+    body {
+      font-family: "Nunito", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      padding: 100px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .main {
+      background-image: url(./mockup.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-x: right;
+      background-position-y: 0px;
+      padding-bottom: 160px;
+    }
+    .left {
+      max-width: 500px;
+      padding-top: 60px;
+      width: 60%;
+    }
+    .email div {
+      margin-bottom: 8px;
+    }
+    .email.response {
+      line-height: 1.4;
+    }
+    .email.response {
+      max-width: 400px;
+    }
+    img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    h1 {
+      font-size: 24px;
+      background: linear-gradient(96.8deg, #9B51E0 -4.85%, #F3579B 104.85%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    input {
+      /* Atom Input */
+      padding: 13px 16px;
+
+      width: 289px;
+      height: 48px;
+
+      background: #FFFFFF;
+      /* contentColor 20 */
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      min-width: 100px;
+    }
+    button {
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      overflow: visible;
+      padding: 13px 16px;
+      margin-left: 8px;
+      background: #56CCF2;
+      color: white;
+
+      border-radius: 8px;
+      font: inherit;
+      font-size: 16px;
+      line-height: 22px;
+      
+      -webkit-font-smoothing: inherit;
+      -moz-osx-font-smoothing: inherit;
+      cursor: pointer;
+      transition: background 0.5s;
+    }
+    button:hover {
+      background: #9B51E0;
+    }
+
+    @media only screen and (max-width: 950px) {
+      .main {
+        background-size: 300px;
+      }
+    }
+    @media only screen and (max-width: 860px) {
+      .main {
+        background-size: 260px;
+        background-position-y: 20px;
+      }
+      body {
+        padding: 80px;
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      body {
+        padding: 50px;
+      }
+    }
+    @media only screen and (max-width: 650px) {
+      .main {
+        background-size: 200px;
+        background-position-y: 50px;
+      }
+      .email {
+        padding-right: 20px;
+        margin-top: 100px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 40px;
+        padding-right: 20px;
+        padding-top: 0;
+      }
+    }
+    @media only screen and (max-width: 550px) {
+      h2 {
+        font-size: 30px;
+        line-height: 1.3;
+      }
+      .main {
+        background-size: 200px;
+        background-position-y: 20px;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      h2 {
+        font-size: 26px;
+      }
+      .main {
+        background-size: 170px;
+        background-position-y: 40px;
+      }
+    }
+    @media only screen and (max-width: 430px) {
+      h2 {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+      .main {
+        background-size: 150px;
+        background-position-y: 30px;
+      }
+    }
+    @media only screen and (max-width: 370px) {
+      h2 {
+        font-size: 18px;
+      }
+      .main {
+        background-size: 130px;
+        background-position-y: 40px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="left">
+      <h1>BeautyMark</h1>
+      <h2>Keep track of your makeup, skincare, haircare, and nail products</h2>
+    </div>
+    
+    <section class="email submission">
+      <div>Sign up for the waitlist</div>
+     
+      <form class="horizontal" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTk_E3H12NV_x8CeR1891KhpUOu_H7PRK1YqajG2T0v1UlEg/formResponse" 
+        target="_self" method="POST" id="form">
+        <input placeholder="email address" type="email" required name="entry.1753789957">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="email response" hidden>
+      Sweet! Stay tuned for an email from us when BeautyMark is ready!
+    </section>
+  </div>
+  
+</body>
+<script>
+  let form = document.getElementById('form');
+  
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    
+    const resp = await fetch(form.action, { 
+      method: 'POST', 
+      mode:  'no-cors',
+      body: formData, 
+    });
+
+    document.querySelector('.email.response').hidden = false;
+    document.querySelector('.email.submission').hidden = true;
+    
+
+  });
+</script>
+
+</html>
