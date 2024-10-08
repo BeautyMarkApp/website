@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    BeautyMark {% if page.title %} | {{ page.title }} {% endif %}
+  </title>
+
+  <meta name="author" content="BeautyMark Labs" />
+  <meta name="description" content="BeautyMark - Keep .track of your makeup, skincare, haircare, and nail products" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+  <link rel="stylesheet" href="/style.css" type="text/css" media="screen, projection" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/icon.png" />
+  <link rel="icon" type="image/png" href="/icon.png">
+  
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#F3579B">
+
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="BeautyMark">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BeautyMark">
+
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" sizes="192x192" href="/icon.png">
+
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="/icon.png">
+  <meta name="msapplication-TileColor" content="#F3579B">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Default twitter cards -->
+  <meta name="twitter:card" content="BeautyMark">
+  <meta name="twitter:site" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BeatyMark">
+  <meta property="og:image" content="/icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google_analytics_tracking_id }}']);
+    _gaq.push(['_setDomainName', 'beautymark.app']);
+    _gaq.push(['_trackPageview']);
+    
+    // TODO.
+  </script>
+</head>
+
+<body>
+  {{ content }}
+</body>
+
+</html>
