@@ -14,6 +14,10 @@ html {
   --accent: #F3579B;
 }
 
+h3 {
+  color: #333333;
+}
+
 body {
   background: white;
   -moz-osx-font-smoothing: grayscale;
