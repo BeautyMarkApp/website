@@ -35,6 +35,7 @@ permalink: /changelog/
 ### V2.1 (119) | September 18, 2024
 
 - Fixed share-to extension
+- Minor UI & bug fixes
 
 ### September 16, 2024
 
@@ -66,6 +67,7 @@ permalink: /changelog/
 - Product stamps
 - Added collections!
 - Added purchase history
+- Minor UI & bug fixes
 
 ### June 2024
 
@@ -74,6 +76,7 @@ permalink: /changelog/
 - Added share-to extension
 - Autocomplete brands
 - Dark and light modes
+- Minor UI & bug fixes
 
 ### April 2024
 
