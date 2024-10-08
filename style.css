@@ -1,4 +1,7 @@
-* { box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -7,7 +10,6 @@ html, body {
 
 html {
   --sans-serif: "Inter", -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-
   --text: #222222;
   --accent: #F3579B;
 }
@@ -16,7 +18,6 @@ body {
   background: white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
   color: var(--text);
   font-family: var(--sans-serif);
   font-optical-sizing: auto;
@@ -24,7 +25,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 1.2em;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -55,16 +55,14 @@ header .header-title {
   background-image: linear-gradient(96.8deg, #9B51E0 -4.85%, #F3579B 104.85%);
   background-size: 100%;
   background-repeat: repeat;
-
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
   font-size: 24px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .content {
@@ -84,6 +82,7 @@ nav a:link, nav a:visited {
   text-decoration: none;
   margin-left: 36px;
 }
+
 nav a.download {
   background: var(--accent);
   color: white;
@@ -102,7 +101,7 @@ footer a:link, footer a:visited {
   color: white;
   text-decoration: none;
 }
- 
+
 footer .footer-bottom {
   display: flex;
   flex-direction: row;
@@ -118,10 +117,13 @@ footer .grid {
   grid-column-gap: 50px;
   grid-row-gap: 8px;
 }
-  
-.copy-title { 
+
+.copy-title {
   font-size: 20px;
   font-weight: 600;
-  grid-area: 1 / 1 / 2 / 3; 
+  grid-area: 1 / 1 / 2 / 3;
 }
-.copy-body { grid-area: 2 / 1 / 5 / 3; }
+
+.copy-body {
+  grid-area: 2 / 1 / 5 / 3;
+}
