@@ -1,18 +1,11 @@
 ---
-layout: page
+layout: main
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<h1 class="pb-6 text-2xl font-bold">About</h1>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<p>
+BeautyMark emerged from common frustrations. Monica found herself with an abundance of 37 identical red lipsticks, while Brittany struggled to recall her precise concealer shade during shopping trips. These experiences sparked an idea: a virtual makeup bag that is always accessible in your pocket.
+</p>
