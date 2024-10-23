@@ -4,13 +4,26 @@ title:  "BeautyMark Changelog"
 permalink: /changelog/
 ---
 
-# Changelog
+<h1 class="pb-6 text-2xl font-bold">Changelog</h1>
 
-### V2.1 (128) | September 30, 2024
+<div class="pb-8">
+  <div class="text-xl font-bold pb-4">V2.1 (128) | September 30, 2024</div>
+  <ul class="list-disc list-inside">
+    <li>Added app icons</li>
+    <li>Small redesign of the Settings page</li>
+    <li>So many bug fixes</li>
+  </ul>
+</div>
 
-- Added app icons
-- Small redesign of the Settings page
-- So many bug fixes
+<div class="pb-8">
+  <div class="text-xl font-bold pb-4">V2.1 (121) | September 22, 2024</div>
+  <ul class="list-disc list-inside">
+    <li>Added search</li>
+    <li>Small redesign of the main page to accomodate search (more to come)</li>
+    <li>Experimenting with background removing — this might make your phone warm 🔥 (in which case we'll remove it)</li>
+    <li>Minor UI & bug fixes</li>
+  </ul>
+</div>
 
 ### V2.1 (122-127) | September 30, 2024
 
